@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/restspace/svelte-schema-form.git"
+		"url": "git+https://github.com/d-m-/svelte-schema-form.git"
 	},
 	"keywords": [
 		"svelte",
@@ -19,7 +19,7 @@
 	},
 	"homepage": "https://github.com/restspace/svelte-schema-form#readme",
 	"exports": {
-        ".": {
+    ".": {
             "types": "./dist/index.d.ts",
             "svelte": "./dist/index.js"
         },

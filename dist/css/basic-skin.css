@@ -1,0 +1,263 @@
+:root {
+  --input-padding: 3px;
+  --input-border: 1px solid #aaa;
+}
+
+form.svelte-schema-form {
+  font-family: "Montserrat", sans-serif;
+}
+form.svelte-schema-form input {
+  font-family: "Montserrat", sans-serif;
+}
+form.svelte-schema-form .collapser {
+  background-size: 2rem 2rem;
+  background-position: 50% 35%;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../img/right.svg);
+}
+form.svelte-schema-form .collapser.open {
+  background-image: url(../img/down.svg);
+}
+form.svelte-schema-form .list-control {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.1em;
+  height: 1.1em;
+  border: none;
+  cursor: pointer;
+}
+form.svelte-schema-form .add {
+  background-image: url(../img/add.svg);
+  width: 1.7em;
+  height: 1.7em;
+}
+form.svelte-schema-form .delete {
+  background-image: url(../img/delete.svg);
+}
+form.svelte-schema-form .up {
+  background-image: url(../img/up.svg);
+}
+form.svelte-schema-form .down {
+  background-image: url(../img/down.svg);
+}
+form.svelte-schema-form .duplicate {
+  background-image: url(../img/duplicate.svg);
+}
+form.svelte-schema-form .info {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 0.6em;
+  height: 0.6em;
+  display: inline-block;
+  background-image: url(../img/info.svg);
+  background-size: 90% 90%;
+  cursor: pointer;
+}
+form.svelte-schema-form label, form.svelte-schema-form .subset-label {
+  color: #777;
+}
+form.svelte-schema-form .subset-label {
+  font-weight: bold;
+}
+form.svelte-schema-form .subset-label .subset-label-description {
+  font-size: 0.8em;
+}
+form.svelte-schema-form .depth-0 > .subset-label {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+form.svelte-schema-form input, form.svelte-schema-form select, form.svelte-schema-form .input {
+  border: var(--input-border);
+  border-radius: 2px;
+  padding: var(--input-padding);
+  color: #777;
+}
+form.svelte-schema-form button {
+  background-color: transparent;
+}
+form.svelte-schema-form .error {
+  position: relative;
+  top: -0.5em;
+  color: red;
+}
+form.svelte-schema-form .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+form.svelte-schema-form .button-container .submit-button {
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  cursor: pointer;
+  color: #aaa;
+}
+form.svelte-schema-form .button-container button:hover {
+  background-color: #f8f4f4;
+}
+form.svelte-schema-form .button-container button {
+  border: 2px solid #aaa;
+  color: #777;
+}
+form.svelte-schema-form.dirty .submit-button {
+  border: 2px solid #aaa;
+  color: #777;
+}
+form.svelte-schema-form .sf-drop-area {
+  height: 4em;
+  border: var(--input-border);
+  padding-right: 16px;
+  position: relative;
+  box-sizing: border-box;
+}
+form.svelte-schema-form .sf-drop-area.highlight {
+  background-color: #eee;
+}
+form.svelte-schema-form .sf-drop-area .sf-upload-caption {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #ccc;
+}
+form.svelte-schema-form .sf-drop-area .sf-upload-controls .sf-upload-deleter {
+  background-image: url(../img/delete.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+form.svelte-schema-form .sf-drop-area .sf-upload-controls .sf-upload-to-uploader {
+  background-image: url(../img/upload.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+form.svelte-schema-form .sf-drop-area .sf-upload-controls .sf-upload-to-link {
+  background-image: url(../img/link.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+form.svelte-schema-form .sf-progress-bars .sf-progress-bar {
+  border: var(--input-border);
+  padding: var(--input-padding);
+  font-size: 1em;
+}
+form.svelte-schema-form .sf-progress-bars .sf-progress-bar .sf-progress-done {
+  background-color: rgba(128, 128, 128, 0.3137254902);
+}
+form.svelte-schema-form .sf-autocomplete .sf-items {
+  background-color: #f8f8f8;
+}
+form.svelte-schema-form .sf-autocomplete .sf-items img, form.svelte-schema-form .sf-autocomplete .sf-selected-item img {
+  max-height: 3em;
+  max-width: 5em;
+  margin-right: 1em;
+}
+form.svelte-schema-form .sf-autocomplete .sf-items > div {
+  border: var(--input-border);
+  border-top: none;
+  font-size: 0.8em;
+  padding: 6px;
+}
+form.svelte-schema-form .sf-autocomplete .sf-selected-item {
+  min-height: 22px;
+  padding: 0;
+  padding-left: var(--input-padding);
+  font-size: 0.8em;
+}
+form.svelte-schema-form .sf-autocomplete .sf-selected-item input {
+  border: none;
+  padding: var(--input-padding);
+  margin: 0;
+  margin-left: -3px;
+  width: 100%;
+}
+form.svelte-schema-form .list-detail {
+  margin: 1em 0;
+}
+form.svelte-schema-form .list-detail .array-label {
+  border: none;
+}
+form.svelte-schema-form .list-detail .table-container {
+  padding: 1em;
+  border: 1px solid black;
+}
+form.svelte-schema-form .list-detail .heading {
+  text-align: center;
+  font-weight: bold;
+}
+form.svelte-schema-form .list-detail .heading,
+form.svelte-schema-form .list-detail .heading + .buttons-header {
+  border-bottom: 1px solid #777;
+}
+form.svelte-schema-form .list-detail .heading.asc:after,
+form.svelte-schema-form .list-detail .heading.desc:after {
+  content: " ";
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+}
+form.svelte-schema-form .list-detail .heading.asc:after {
+  background-image: url(../img/down.svg);
+}
+form.svelte-schema-form .list-detail .heading.desc:after {
+  background-image: url(../img/up.svg);
+}
+form.svelte-schema-form .list-detail .row-wrapper {
+  display: contents;
+}
+form.svelte-schema-form .list-detail .item {
+  align-items: center;
+  justify-content: center;
+}
+form.svelte-schema-form .list-detail .item,
+form.svelte-schema-form .list-detail .row-wrapper + .array-buttons {
+  border-bottom: 1px solid #ccc;
+}
+form.svelte-schema-form .list-detail .row-wrapper:hover div,
+form.svelte-schema-form .list-detail .row-wrapper:hover + .sf-array-buttons {
+  background-color: #f8f8f8;
+}
+form.svelte-schema-form .list-detail .row-wrapper.selected div,
+form.svelte-schema-form .list-detail .row-wrapper.selected + .sf-array-buttons {
+  background-color: #eef;
+}
+form.svelte-schema-form .list-detail .table-container > .element {
+  padding: 5px 13px;
+}
+form.svelte-schema-form .list-detail .control-button {
+  width: 18px;
+  height: 18px;
+  margin-top: 0;
+}
+form.svelte-schema-form .list-detail .row-buttons {
+  padding: 5px 0 1px 0;
+}
+form.svelte-schema-form .list-detail .add-button-container {
+  justify-self: center;
+  padding-top: 10px;
+}
+form.svelte-schema-form .list-detail .add-button {
+  width: 30px;
+  height: 30px;
+}
+form.svelte-schema-form .list-detail .element > .subset {
+  border-left: none;
+}
+form.svelte-schema-form .list-detail .to-list {
+  border: none;
+  position: relative;
+  left: 10px;
+  cursor: pointer;
+  top: -7px;
+}
+form.svelte-schema-form .list-detail .to-list:before {
+  content: " ";
+  background-image: url(../img/left-arrow.svg);
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  left: -19px;
+  top: -2px;
+}
+
+/*# sourceMappingURL=basic-skin.css.map */
