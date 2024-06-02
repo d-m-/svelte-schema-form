@@ -1,4 +1,4 @@
-<script>import { select_options, tick } from "svelte/internal";
+<script>import { tick } from "svelte";
 export let params;
 export let schema;
 export let value;
